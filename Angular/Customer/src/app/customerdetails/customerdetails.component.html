@@ -1,0 +1,26 @@
+<div class="container">
+  <form #form1='ngForm' (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div>
+        <label>Name:</label>
+        <input required id="name" name="name" type="text" class="form-control"  [(ngModel)]="name" #namecontrol="ngModel"/>
+        <span *ngIf="namecontrol.invalid && namecontrol.touched" > Name is
+          required</span>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input required id="email" name="email" type="text" class="form-control"  [(ngModel)]="email" #idcontrol="ngModel"/>
+        <span *ngIf="idcontrol.invalid && idcontrol.touched" > Email is
+          required</span>
+      </div>
+      <div>
+        <label>Address:</label>
+        <input type="text" class="form-control" value="Address" [(ngModel)]="address">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </form>
+</div>
+<div *ngFor="let cust of Customers"> 
+  <h1>{{cust.name}}</h1>
+</div>

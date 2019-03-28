@@ -1,0 +1,45 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+  
+  
+  </head>
+  <body>
+    <!--this is the component calling of child component and binding the methods created in .ts of root component-->
+    <app-custdetails
+      [total]="getTotal()"
+      [male]="getTotalMale()"
+      [female]="getTotalFemale()"
+      ></app-custdetails>
+      <!--(OnSelectionOfRadioButton)="getSelection($event)"-->
+    <!--creating column names by using th-->
+    <table class="table table-bordered table-hover ">
+      <caption>LIST OF EMPLOYEES</caption>
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">employeename</th>
+        <th scope="col">gender</th>
+        <th scope="col">department</th>
+        <th scope="col">joindate</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of details">
+          <!--custom pipe from pipe.ts-->
+        <td>{{employee.employeename |uppercase|Salutation1:employee.gender }}</td>
+        <td>{{employee.gender}}</td>
+        <td>{{employee.department}}</td>
+        <td>{{employee.joindate | date:'fullDate'|uppercase}}</td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+  </body> 
+  </html>
+  
