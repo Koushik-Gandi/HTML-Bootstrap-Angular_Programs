@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scaled=1">
+        <title>Children Care Orphanage</title>
+        <link href="G:/Node_js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../Website/register.css">
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+        <script src="../jQuery/jquery-3.3.1.slim.min.js"></script>
+        <!-- popperjs (necessary for Bootstrap's JavaScript plugins -->
+        <script src="../Poppers/popper.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed-->              
+        <script src="../bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>                  
+    </head>
+    <body id="body">
+        <div class="container">
+            <h3 class="text-center">Register Here</h3>
+        </div>
+        <form method="POST">
+            <div class="row">
+            <div class="col-2 col-border">
+                <div class="col-border-padding">
+                <div class="list-group" >        
+                    <li class="list-group-item" id="col-1">
+                        <button type="button" class="btn btn-link"><a href="About_Us.html">AboutUs</a></button>
+                    </li>
+                    <li class="list-group-item" id="col-1">
+                            <button type="button" class="btn btn-link"><a href="Supporters.html">Support</a></button>
+                    </li>
+                </div>
+            </div>
+        </div>
+            <div class="col-4 col-border">
+                <div class="col-border-padding">
+                    <h3 class="text-left">Personal Details</h3>
+                        First Name&nbsp;    :
+                        <input type="text" name="name" title="First name" placeholder="First name" required /><br><hr>
+                        Last Name&nbsp;     :
+                        <input type="text" name="name" title="Last name" placeholder="Last name" required /><br><hr>
+                        Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <input type="email" name="name" title="Email" placeholder="Email" required/><br><hr>
+                        Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <select name="State" required>
+                                <option value="" selected disabled>select</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Tamilnadu">Tamilnadu</option>
+                                <option value="Gujarath">Gujarath</option>
+                                <option value="Mumbai">Mumbai</option>
+                        </select>
+                        <select name="District" required>
+                                <option value="" selected disabled>select</option>
+                                <option value="Warangal">Warangal</option>
+                                <option value="Guntoor">Guntoor</option>
+                                <option value="Khammam">Khammam</option>
+                                <option value="Mahabubnagar">Mahabubnagar</option>
+                                <option value="Mahabubabad">Mahabubabad</option>
+                            </select><br><hr>
+                            Pincode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <input name="PINcode" type="text" pattern="[0-9]{6}" title="Your input should be like 333333" placeholder="Pincode" required/> 
+                        <br><hr> 
+                </div>
+            </div>
+            <div class="col-4 col-border">
+                <div class="col-border-padding">
+                    <h3 class="text-left">Card Details</h3>
+                        Name on the card :
+                        <input type="text" title="Name on the card" placeholder="Name on the card" required />
+                        <hr>
+                        Card Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <input type="text" title="Card Number" placeholder="Card number" pattern="[0-9]{16}" required />
+                        <hr>
+                        Expiry Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <select name="Month" required>
+                                <option value="" selected disabled>select</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                        </select>
+                        <select name="Year" required>
+                                <option value="" selected disabled>select</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                        </select><hr>
+                        CVV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <input type="text" title="CVV" placeholder="CVV" pattern="[0-9]{3}" required />
+                </div>
+            </div>
+        </div><hr><hr>
+        <div class="text-center">
+            <a href="Thank_you.html" class="btn btn-primary">Submit</a>
+        </div>
+    </form>
+    </body>
+</html>

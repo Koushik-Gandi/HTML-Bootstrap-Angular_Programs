@@ -1,0 +1,23 @@
+#body-1{
+    background-color: rgb(175, 241, 216);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color:rgb(165, 157, 141);
+}
+#col-1{
+    background-color: rgb(184, 198, 199)
+}
+.col-border{
+    border-left: 1px solid rgb(36, 138, 163);
+}
+#col-3{
+    background-color: rgb(155, 183, 235)
+}
+.jum{
+    background-color: silver
+}
+#row-2{
+    background-color: black
+}

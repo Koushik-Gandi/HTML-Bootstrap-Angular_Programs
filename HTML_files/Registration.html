@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="../HTML_files/CSS_files/Registration.css">
+    </head>
+    <body id="body_1">
+        <center>
+            <h1>CapGemini</h1>
+        </center> 
+        <img title="CapGemini" src="../HTML_files/images/capg.png" alt="logo not available">
+            <p>
+                Welcome, please register to continue.
+            </p>
+        <h3>Registration</h3>
+        <form method="POST" action="Login.html" enctype="multipart/form-data">
+        <div id="div_1">
+            <h4></h5>Personal Details</h4><br>
+            Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+            <input type="text" name="name" placeholder="Name"><br>
+            Address&nbsp;&nbsp;&nbsp;:
+            <select name="State">
+                    <option value="" selected disabled>select</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Gujarath">Gujarath</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+                <select name="District">
+                        <option value="" selected disabled>select</option>
+                        <option value="Warangal">Warangal</option>
+                        <option value="Guntoor">Guntoor</option>
+                        <option value="Khammam">Khammam</option>
+                        <option value="Mahabubnagar">Mahabubnagar</option>
+                        <option value="Mahabubabad">Mahabubabad</option>
+                    </select>
+                    <input name="PINcode" type="text" pattern="[0-9]{6}" title="Your input should be like 333333" placeholder="Pincode" required/> 
+                    <br>
+             Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+           <input id="email" name="email" type="email" placeholder="Email" required /><br>
+           Mobile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+           <input name="MobileNo" type="text" pattern="[0-9]{10}" title="Your input should be like 9999999999" placeholder="MobileNo"><br>
+           Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+           <input name="Age" type="number" placeholder="Age"><br>
+           Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+           <input name="Gender" type="gender" placeholder="Gender"> 
+        </div><hr><hr>
+        <div id="div_2">
+            <h4>Educational Details</h4>
+            <div id="div_3">
+                10<sup>th</sup> Details:<br>
+                Percentage/GPA :<input type="text" name="Percentage/GPA" placeholder="Percentage/GPA"><br>
+                Board &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="Board" placeholder="Board"><br>
+                Year of Passing &nbsp;&nbsp;:
+                <select name="Year">
+                        <option value="" selected disabled>select</option>
+                        <option value="2016">2010</option>
+                        <option value="2017">2011</option>
+                        <option value="2018">2012</option>
+                        <option value="2019">2013</option>
+                        <option value="2020">2014</option>
+                    </select>
+                
+                <br>    School Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="Name" placeholder="School Name">
+            </div><hr><hr>
+            <div id="div_4">
+                Intermediate Details:<br>
+                Percentage/GPA :<input type="text" name="Percentage/GPA" placeholder="Percentage/GPA"><br>
+                Group &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="Board" placeholder="Board"><br>
+                Year of Passing &nbsp;&nbsp;:
+                <select name="Year">
+                        <option value="" selected disabled>select</option>
+                        <option value="2016">2012</option>
+                        <option value="2017">2013</option>
+                        <option value="2018">2014</option>
+                        <option value="2019">2015</option>
+                        <option value="2020">2016</option>
+                    </select>
+                <br>
+                Collage Name &nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="Name" placeholder="Collage Name">
+            </div><hr><hr>
+            <div id="div_5">
+                Graduation Details:<br>
+                Percentage/GPA &nbsp;&nbsp;:<input type="text" name="Percentage/GPA" placeholder="Percentage/GPA"><br>
+                Branch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="Board" placeholder="Board"><br>
+                Year of Passing &nbsp;&nbsp;&nbsp;&nbsp;:
+                <select name="Year">
+                        <option value="" selected disabled>select</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                <br>
+                Institution Name &nbsp;&nbsp;:<input type="text" name="Name" placeholder="Institute Name">
+            </div><hr><hr>
+        </div>
+        Select a photo to upload:
+        <input type="file" name="photo" title="Choose a photo to upload"/>&nbsp;&nbsp;&nbsp;
+        <input type="file" name="resume"  title="Choose a file to upload"/><br>
+        <center>
+        <input type="submit" name="submit" >
+        </center>
+    </form>
+    </body>
+</html>

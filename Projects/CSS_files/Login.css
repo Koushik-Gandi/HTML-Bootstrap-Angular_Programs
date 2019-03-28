@@ -1,0 +1,25 @@
+#body_1{
+    background-color: lightgrey;
+    background-image: url("../images/capg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    height: 200;
+    width: 250;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 15%;
+  }
+
+
+  div.wrapper{
+      margin: auto;
+      width: 12%;
+      text-align: center;
+  }

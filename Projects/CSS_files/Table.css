@@ -1,0 +1,16 @@
+#table_1,th,td{
+    border: 1px solid black;
+    background-color: darkgray
+  }
+  #table_1{
+   
+    background-image: url("C:/Users/Anurag/Desktop/New folder/images.jpg");
+  }
+#table_2{
+    border: 1px solid black;
+    background-color:cornflowerblue
+}
+#table_3{
+    border: 1px solid black;
+    background-color:rgb(47, 212, 218);
+}

@@ -1,0 +1,15 @@
+#body{
+    background-color: rgb(190, 216, 216)
+}
+#text{
+    background-color: rgb(180, 204, 137)
+}
+.text{
+    background-color: rgb(159, 194, 194); 
+}
+.jum{
+    background-color: silver
+}
+.col-border{
+    border-left: 1px solid grey
+}

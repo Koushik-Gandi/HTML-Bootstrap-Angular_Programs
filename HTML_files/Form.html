@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="G:\HTML_files\CSS_files\Form1.css"/>
+    </head>
+    <body>
+            <form method="POST" action="Table.html" enctype="multipart/form-data">
+        Select your Hobbies:
+        <input type="checkbox" name="hobbies" value="Reading Books">Reading Books
+        <input type="checkbox" name="hobbies" value="Net surfing">Net surfing
+        <input type="checkbox" name="hobbies" value="Playing games">Playing games<br>
+        <hr>
+        
+            Select your sector in which you are working :
+            <input type="radio" name="sector" value="Public">Public
+            <input type="radio" name="sector" value="Private">Private
+        <hr>
+        
+            Select a country: 
+            <select name="Country">
+                <option value="" selected disabled>select</option>
+                <option value="India">India</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="America">America</option>
+                <option value="Australia">Australia</option>
+            </select>
+        <hr>
+           Id       : 
+           <input id="Text" type="text" autofocus/><br><br>
+           Password:
+           <input type="password" placeholder="password"><br><br>
+           Email:
+           <input id="email" name="email" type="email" required/><br><br>
+           PINcode:
+           <input name="PINcode" type="text" pattern="[0-9]{6}" title="Ypur input should be like 333333" required/> 
+            <br>
+            Select a photo to upload:
+                <input type="file" name="photo"/>
+            <input type="submit" name="submit" >Submit
+    </form>
+    </body>
+</html>
